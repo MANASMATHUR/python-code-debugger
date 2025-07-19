@@ -1,0 +1,73 @@
+=== DEBUG SESSION ===
+Original Code:
+int b = 89
+int 90 == f
+g > j*9
+print)9(
+
+Error:
+=== DEBUG SESSION ===
+Original Code:
+double c = 9.89
+long a = 98.9
+int b >90
+d == a+b*c
+
+Error:
+ Error:
+Traceback (most recent call last):
+  File "C:\Users\manas\OneDrive\Desktop\AI DEBUGGER - PROJECT 2\main.py", line 25, in execute_code
+    exec(code, exec_globals)
+  File "<string>", line 1
+    double c = 9.89
+           ^
+SyntaxError: invalid syntax
+
+
+Suggested Fix:
+```
+c = 9.89
+a = 98.9
+b = 90
+d = a + b * c
+```
+========================================
+
+=== DEBUG SESSION ===
+Original Code:
+printf("Hello World!);
+
+Error:
+ Error:
+Traceback (most recent call last):
+  File "C:\Users\manas\OneDrive\Desktop\AI DEBUGGER - PROJECT 2\main.py", line 25, in execute_code
+    exec(code, exec_globals)
+  File "<string>", line 1
+    printf("Hello World!);
+           ^
+SyntaxError: unterminated string literal (detected at line 1)
+
+
+Suggested Fix:
+print("Hello World!")
+========================================
+
+=== DEBUG SESSION ===
+Original Code:
+hello)9)
+
+Error:
+ Error:
+Traceback (most recent call last):
+  File "C:\Users\manas\OneDrive\Desktop\AI DEBUGGER - PROJECT 2\main.py", line 25, in execute_code
+    exec(code, exec_globals)
+  File "<string>", line 1
+    hello)9)
+         ^
+SyntaxError: unmatched ')'
+
+
+Suggested Fix:
+print("hello")
+========================================
+

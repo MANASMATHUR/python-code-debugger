@@ -1,0 +1,24 @@
+ai-debugging-assistant
+│
+├── .env                     ← Your GrokAI API Key
+├── main.py                  ← Agent logic (LangChain + Tools)
+├── tools/
+│   ├── __init__.py
+│   ├── executor.py          ← run_code(), safe_exec
+│   ├── fixer.py             ← fix_code_with_llm()
+│   └── tester.py            ← test_code(), if needed later
+│
+├── agent/
+│   ├── __init__.py
+│   └── agent_setup.py       ← tool registration + LangChain agent creation
+│
+├── api/
+│   ├── __init__.py
+│   └── fastapi_app.py       ← FastAPI wrapper (optional UI backend)
+│
+├── examples/
+│   ├── buggy_code.py        ← Demo scripts to test the agent
+│
+├── requirements.txt         ← All pip dependencies
+├── README.md                ← Project description, features, usage
+└── .gitignore
