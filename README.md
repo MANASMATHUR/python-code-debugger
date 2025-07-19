@@ -24,23 +24,6 @@ A fullstack web app that helps debug Python code using Large Language Models (LL
 - **Parsing**: Python `ast` module
 
 
-
-##  Project Structure
-
-python-code-debugger/
-│
-├── frontend/ # React frontend
-├── main.py # Optional script or entrypoint
-├── server.py # Flask backend (API logic)
-├── requirements.txt # Python dependencies
-├── debug_log.txt # Log file for backend debugging
-├── .env # API keys (not committed)
-└── .gitignore
-
-
-
----
-
 ##  How to Run Locally
 
 ### 
